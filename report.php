@@ -11,5 +11,4 @@ if ($type == 'admin') {
     echo "Welcome User here is the reports for all the users";
 } else {
     echo "Access denied";
-    exit();
 }

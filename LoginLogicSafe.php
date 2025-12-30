@@ -20,7 +20,6 @@ if (isset($_GET['username'])) {
         $_SESSION['username'] = $row['username'];
         $_SESSION['type'] = $row['type'];
         header("Location: report.php?");
-        exit();
     }
 } else {
     echo "Invalid username or password.";
