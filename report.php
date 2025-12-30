@@ -2,6 +2,7 @@
 session_start();
 if (!isset($_SESSION['type'])) {
     echo "Access denied";
+    exit();
 }
 $type = $_SESSION['type'];
 if ($type == 'admin') {
@@ -10,4 +11,5 @@ if ($type == 'admin') {
     echo "Welcome User here is the reports for all the users";
 } else {
     echo "Access denied";
+    exit();
 }
